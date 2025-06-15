@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>
+	<title>Weather App</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="weather">
+			<div class="weather_inner">
+				<div class="weather_header">
+					<input type="text" class="weather_input" placeholder="Enter City Name">
+					<div class="weather_search">
+						<img src="search.png" alt="">
+					</div>
+				</div>
+				<div class="weather_error">
+					Invalid City Name
+				</div>
+				<img src="" alt="" class="weather_icon">
+				<div class="weather_temperature_inner">
+					<div class="weather_temperature"></div>
+					<div class="weather_city"></div>
+				</div>
+				<div class="weather_footer">
+					<div class="weather_footer_row">
+						<div class="weather_footer_item">
+							<img src="thermometer.png" alt="" class="weather_footer_img">
+							<div class="weather_additionally_info_inner">
+								<div class="weather_footer_data weather-feels-like"></div>
+								<div class="weather_footer_name">Feels like</div>
+							</div>
+						</div>
+						<div class="weather_footer_item">
+							<img src="windy.png" alt="" class="weather_footer_img">
+							<div class="weather_additionally_info_inner">
+								<div class="weather_footer_data weather-wind-speed"></div>
+								<div class="weather_footer_name">Wind Speed</div>
+							</div>
+						</div>
+					</div>
+					<div class="weather_footer_row">
+						<div class="weather_footer_item">
+							<img src="humidity.png" alt="" class="weather_footer_img">
+							<div class="weather_additionally_info_inner">
+								<div class="weather_footer_data weather-humidity"></div>
+								<div class="weather_footer_name">Humidity</div>
+							</div>
+						</div>
+						<div class="weather_footer_item">
+							<img src="gauge.png" alt="" class="weather_footer_img">
+							<div class="weather_additionally_info_inner">
+								<div class="weather_footer_data weather-pressure"></div>
+								<div class="weather_footer_name">Pressure</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="advice">
+			<div class="advice_inner">
+				<img src="idea.png" alt="" class="advice_img">
+				<div class="advice_text_inner">
+					<div class="advice_text">🥶 Дуже холодно! Одягай кілька шарів курток, шапку та рукавиці. Краще залишитися вдома.</div>
+				</div>
+				<div class="advice_btn">Thanks</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
