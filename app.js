@@ -22,27 +22,27 @@ async function checkWeather(city) {
 		document.querySelector(".weather_error").style.display = "none"
 
 		if (data.weather[0].main === "Clear") {
-			document.querySelector(".weather_icon").src = "sun.png"
+			document.querySelector(".weather_icon").src = "images/sun.png"
 			document.querySelector(".weather_icon").style.width = "175px"
 			document.querySelector(".weather_icon").style.height = "175px"
 			document.querySelector(".weather").style.background = "linear-gradient(to top right, #f9d423, #ff4e50)"
 		} else if (data.weather[0].main === "Clouds") {
-			document.querySelector(".weather_icon").src = "cloudy.png"
+			document.querySelector(".weather_icon").src = "images/cloudy.png"
 			document.querySelector(".weather_icon").style.width = "128px"
 			document.querySelector(".weather_icon").style.height = "128px"
 			document.querySelector(".weather").style.background = "linear-gradient(to bottom, #789ec7, #c9d6e3)"
 		} else if (data.weather[0].main === "Rain") {
-			document.querySelector(".weather_icon").src = "rainy.png"
+			document.querySelector(".weather_icon").src = "images/rainy.png"
 			document.querySelector(".weather_icon").style.width = "128px"
 			document.querySelector(".weather_icon").style.height = "128px"
 			document.querySelector(".weather").style.background = "linear-gradient(to bottom, #2c3e50, #4ca1af)"
 		} else if (data.weather[0].main === "Drizzle") {
-			document.querySelector(".weather_icon").src = "drizzle.png"
+			document.querySelector(".weather_icon").src = "images/drizzle.png"
 			document.querySelector(".weather_icon").style.width = "128px"
 			document.querySelector(".weather_icon").style.height = "128px"
 			document.querySelector(".weather").style.background = "linear-gradient(to bottom, #cfd9df, #e2ebf0)"
 		} else if (data.weather[0].main === "Mist") {
-			document.querySelector(".weather_icon").src = "mist.png"
+			document.querySelector(".weather_icon").src = "images/mist.png"
 			document.querySelector(".weather_icon").style.width = "128px"
 			document.querySelector(".weather_icon").style.height = "128px"
 			document.querySelector(".weather").style.background = "linear-gradient(to top, #aeb5bd, #d4d9df, #f0f3f7)"
